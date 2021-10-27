@@ -1,0 +1,54 @@
+-------------
+27/10/2021
+
+Node.js Express - Angular 12 Authentication example
+
+Link
+https://www.bezkoder.com/node-js-angular-12-jwt-auth/
+
+Backend Continuacion :
+https://www.bezkoder.com/node-js-jwt-authentication-mysql/
+
+Deployment:
+https://www.bezkoder.com/deploy-node-js-app-heroku-cleardb-mysql/
+https://www.bezkoder.com/docker-compose-nodejs-mysql/
+
+-------------
+Technology:
+
+    Express 4.17.1
+    bcryptjs 2.4.3
+    jsonwebtoken 8.5.1
+    Sequelize 5.21.3
+    MySQL
+
+-------------
+
+> npm install express sequelize mysql2 body-parser cors jsonwebtoken bcryptjs --save
+
+>npm i nodemon
+-------------
+
+http://localhost:8080/api/test/all
+
+-------------
+Repo original
+
+https://github.com/bezkoder/node-js-jwt-auth
+
+>git clone
+>npm i
+> node server.js
+-------------
+
+Run & Test with Results
+
+
+mysql> describe users;
+
+----
+If you don't use initial() function in Sequelize sync() method. You need to run following SQL script:
+
+mysql> INSERT INTO roles VALUES (1, 'user', now(), now());
+mysql> INSERT INTO roles VALUES (2, 'moderator', now(), now());
+mysql> INSERT INTO roles VALUES (3, 'admin', now(), now());
